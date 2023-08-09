@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Piedra&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>BooksBazar</h1>
+            </div>
+            <ul>
+                <li>
+                    <a id="home" onclick="home()">Home</a>
+                    <a id="shop" onclick="shop()">Shops</a>
+                    <a id="blog" onclick="blog()">Blog</a>
+                    <a id="about" onclick=" about()">About</a>
+                    <a id="contact" onclick="contact()">Contact</a>
+                    <i onclick="addItem()" class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mainPage">
+            <div class="text">
+                <h2>Trends...</h2>
+                <h1 class="heads">Super Value Deals</h1>
+                <h1>On All Products</h1>
+                <p>Book Bazar is the place where you find your books that will help you to grow...</p>
+                <button>Explore</button>
+            </div>
+            <img src="m3.png" alt="">
+        </div>
+
+
+
+        <div class="cardMen">
+            <div class="head">
+                <h1>Trends <span>Motivational Books</span></h1>
+            </div>
+            <div class="card" id="item1">
+                <div class="crd">
+                    <img src="atomic.jpg" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Atomic Habits</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button onclick="add(item1)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="you_can.jpg" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>You Can</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="believe.jpg" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Believe in Yourself</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cardgirl">
+            <div class="head">
+                <h1>Trends <span>upsc books</span></h1>
+            </div>
+
+            <div class="card">
+                <div class="crd">
+                    <img src="history1.jpg" alt="" onclick="showCard(this) ">
+                    <div class="txt">
+                        <h3>Vipin Chandra</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="h.jpg" alt="" onclick="showCard(this) ">
+                    <div class="txt">
+                        <h3>Poonam Dalal Dhaiya</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="dristi.jpg" alt="" onclick="showCard(this)">
+                    <div class="txt">
+                        <h3>Dristi IAS Publication</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Full cart  -->
+        <div class="fullPage">
+            <img id="cartImg" src=" " alt="">
+            <div class="cartText">
+                <h1>Trends Offer : Trending Shop <br> Now</h1>
+                <h2>Special Price</h2>
+                <h2>$11</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                <div class="btn">
+                    <button>Buy Now</button>
+                    <button onclick="addToCart()">Add To Cart</button>
+
+                </div>
+                <div class="btns">
+                    <button class="relode" onclick="location.reload()">Back </button>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <!-- add to cart -->
+        <div class="addCart">
+
+        </div>
+
+        <div class="blogContent">
+            <div class="head">
+                <h1>Trends Top <span>Books Blog's</span></h1>
+            </div>
+
+            <div class="trd">
+                <div class="trending">
+                    <img src="tr1.webp" alt="">
+                    <div class="txt">
+                        <h3>Top & Trending Research</h3><br>
+                        <p>We are proud to spotlight content from some of BioOne’s publishing partners including Bulletin of the British Ornithologists' Club, Comparative Parasitology, Entomologica Americana, Geodiversitas, Herzogia, and Mammal Study.</p><br>
+                        <a href="https://bioone.org/top-and-trending-april-2023?gclid=CjwKCAjww7KmBhAyEiwA5-PUSsCGzNW8bdt5cOJlSkWtxeSohy2Hz2adK2I29Eh_PhotZKzt_7_BlRoCyaMQAvD_BwE">Read More</a>
+                    </div>
+                </div>
+                <div class="trending">
+                    <img src="tr3.webp" alt="">
+                    <div class="txt">
+                        <h3>Technical Publications</h3> <br>
+                        <p>A key component to Arctic Ice Project’s work is our collaboration with top international scientists, research organizations, and technical publications</p><br>
+                        <a href="https://www.arcticiceproject.org/news/our-findings/?gclid=CjwKCAjww7KmBhAyEiwA5-PUSuptRh-_RviMbzmtosqxXIW6yt7-glMgB870r_WWsDnJ8MtpkDkgPhoCsxYQAvD_BwE>Read More">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="aboutText">
+                <h1>#Know Me...</h1>
+                <p>I'm Santosh Kumar, a passionate 3rd-year CSE student at MNNIT Allahabad. Enthusiastic about coding and technology, I've crafted an e-book and honed my web development skills. Join me in exploring the limitless possibilities of computer science as I strive to make a meaningful impact in this dynamic field</p>
+            </div>
+
+            <div class="aboutus">
+                <img src="more.jpg" alt="">
+                <div class="dumiText">
+                    <h1>What purpose behind?</h1>
+                    <p>"Empowering readers to explore boundless worlds, our website kindles the fire of knowledge and imagination. With a curated collection of diverse books, we illuminate the path to enlightenment, one page at a time."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div class="contact">
+            <div class="contactBanner">
+                <h1>#Let's Connect</h1>
+                <p>Lets connect to make something better and inspirational.</p>
+
+            </div>
+            <div class="connect">
+                <div class="connectText">
+                    <h1>Visit Our Office or Contact <br> Us Today</h1>
+                    <p>Address : Ambikapur,surguja chhattisgarh, 497001</p>
+                    <p>Contact : kumarsantosh01693@gmail.com</p>
+                    <p>Number : +91 9521365824</p>
+                </div>
+                <img src="map.PNG" alt="">
+            </div>
+
+            <div class="form">
+                <h1>Connect with Us. Fill Form</h1>
+                <input type="text" placeholder="Enter Your FirstName"> <br>
+                <input type="text" placeholder="Enter Your LsstName"> <br>
+                <input type="text" placeholder="Enter Your Email"><br>
+                <input type="text" placeholder="Enter Your Number"><br>
+                <input type="text" placeholder="Enter Your Address"><br>
+                <button>Submit</button>
+
+            </div>
+        </div>
+
+        <div class="letter">
+            <div class="sign">
+                <h2>Sign Up for Better Experience</h2>
+                <p>You will get more benifits more offers...</p>
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Enter Email Address">
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="Ftext">
+                <h1>Trends</h1>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>About Me</h3>
+                <p>Adrress : Ambikapur,Surguja,Chhattisgarh<br> Pin no- 497001 <br> 
+                </p>
+                <p>Contact : +91 7991487759</p>
+                <p>Mail Me : kumarsantosh93016@gmail.com</p>
+                
+
+            </div>
+            <div class="Ftext">
+                <h3>Social Media</h3>
+                <p><a href="https://www.linkedin.com/in/kumarsantosh6/"><i class='bx bxl-linkedin'></i><span>LinkedIn</span></a></p>
+                <p><a href="https://www.instagram.com/kumar.santosh_1/"><i class='bx bxl-instagram' ></i><span>Instagram</span></a></p>
+                <p><a href="#"><i class='bx bxl-facebook' ></i><span>Facebook</span></a></p>
+                <p><a href="#"><i class='bx bxl-twitter' ></i><span>Twitter</span></a></p>
+
+            </div>
+            <div class="Ftext">
+                <h3>Trending</h3>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>SHops</p>
+                <p></p>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
